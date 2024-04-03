@@ -1,0 +1,127 @@
+.add-act-dept-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: calc(100% / 3 - 30px);
+    padding: 10px;
+    margin: 5px;
+    // background-color: $card;
+  }
+}
+
+.act-dept-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .add-act-card {
+    background-color: $card;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3 - 30px);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      color: #000;
+    }
+
+    input {
+      height: 44px;
+      background-color: #05060f0a;
+      border-radius: 0.5rem;
+      padding: 0 1rem;
+      border: 2px solid transparent;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    input:hover,
+    input:focus {
+      border-color: $primary-1;
+    }
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-submit-activity {
+  border: none;
+  outline: none;
+  background-color: $primary_1;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px $primary_3;
+  margin-right: 10px;
+  float: right;
+}
+
+.btn-submit-activity:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px $primary_3;
+}
+
+@media (max-width: 600px) {
+  .add-act-card {
+    width: 100% !important;
+    margin: 5px 0 !important;
+  }
+
+  .header-title {
+    width: 100% !important;
+    margin: 5px 0 !important;
+    padding: 0px !important;
+  }
+}
+
+.actTable {
+  overflow: scroll;
+  overflow-y: scroll;
+}
+
+.add-table-button {
+  float: right;
+}
+
+
+.measure-add-row-modal {
+  .css-15edx0w {
+    width: 80%;
+  }
+}
+
+.page-two-contrainer {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    margin-bottom: 25px;
+    width: 100px;
+    float: right;
+    position: relative;
+    align-self: end;
+  }
+
+  .actTable{
+    overflow-y: hidden !important;
+  }
+
+}

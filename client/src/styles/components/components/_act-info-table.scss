@@ -1,0 +1,22 @@
+.edit-delete-row {
+  display: flex;
+  justify-content: center;
+}
+
+.delete-row-table,
+.edit-row-table {
+  cursor: pointer;
+  margin-inline: 10px;
+  color: $warning;
+  :hover {
+    color: $warning_hover;
+  }
+}
+
+.delete-row-table {
+  cursor: pointer;
+  color: $red;
+  :hover {
+    color: $red_hover;
+  }
+}
